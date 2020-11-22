@@ -9,12 +9,20 @@
             padding: 15px;
             margin-top: 30px;
         }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        button {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button onclick="postClick()">작성</button>
+        <textarea name="" id="textarea"></textarea>
+        <button id="write" onclick="postClick()">게시</button>
     </div>
     <div id="timeline">
         <div class="container">
@@ -42,6 +50,10 @@
         const postClick = async () => {
             post('김규리', postInput.value);
         };
+
+        const postLike = async () => {
+            
+        }
 
 
         const post = (name, description) => {
