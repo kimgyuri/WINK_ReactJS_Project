@@ -2,10 +2,18 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Timeline</title>
     <style>
+        body{
+            background: linear-gradient(202.76deg, #EEFBFF 5.34%, rgba(251, 248, 255, 0.505208) 37%, rgba(224, 249, 255, 0.26) 75.53%, rgba(255, 255, 255, 0) 106.67%), #FAF4FF;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            font-size: 40px;
+        }
         .container {
-            background-color: #ddd;
             padding: 15px;
             margin-top: 30px;
         }
@@ -20,6 +28,9 @@
     </style>
 </head>
 <body>
+    <header>
+        OUTSTARGRAM
+    </header>
     <div class="container">
         <textarea name="" id="textarea"></textarea>
         <button id="write" onclick="postClick()">게시</button>
@@ -39,23 +50,15 @@
                 method: 'get',
             });
             const posts = await postsResponse.json();
-
             for (let i = 0; i < posts.length; i++)
             {
                 console.log(posts[i]);
                 post(posts[i].owner, posts[i].content);
             }
         }
-
         const postClick = async () => {
             post('김규리', postInput.value);
         };
-
-        const postLike = async () => {
-            
-        }
-
-
         const post = (name, description) => {
             console.log(postInput.value);
             // if (postInput.value == "") alert('내용을 작성해주세요');
