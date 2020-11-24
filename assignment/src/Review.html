@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Review</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        header {
+            background-color: white;
+            width: 375px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            margin-left: 15px;
+            width: 12px;
+            height: 19px;
+        }
+        #text {
+            width: 325px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #chicken_image {
+            width: 375px;
+            height: 219px;
+        }
+        #top {
+            position: relative;
+        }
+        #menu {
+            top: 100px;
+            left: 95px;
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+        #bottom {
+            background-color: white;
+            width: 375px;
+            height: 478px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #stars {
+            display: flex;
+            width: 230px;
+            height: 32px;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #textBox {
+            background-color: #F9F9F9;
+            width: 327px;
+            height: 142px;
+            border-radius: 10px;
+        }
+        #textBox div {
+            margin-top: 15px;
+            margin-left: 10px;
+            color: #938E8E;
+            font-size: 14px;
+        }
+        #review_img {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 327px;
+            height: 110px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #photobox {
+            width: 102px;
+            height: 102px;
+            background-color: white;
+            border: 1px solid #DDDDDD;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #camera {
+            width: 32px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        #review_img #photobox div {
+            font-size: 12px;
+        }
+        .photo {
+            width: 102px;
+            height: 102px;
+            border-radius: 3px;
+            position: relative;
+        }
+        #images {
+            width: 215px;
+            height: 102px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #x1 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.58);
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            top: 556px;
+            left: 230px;
+        }
+        #x2 {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.58);
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            top: 556px;
+            left: 336px;
+        }
+        #button {
+            width: 326px;
+            height: 43px;
+            background: linear-gradient(94.03deg, #82C3FF 0%, #C464FF 100%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #buttonText {
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/back.png">
+        <div id="text">리뷰 남기기</div>
+    </header>
+</body>
+    <section id="top">
+        <img id="chicken_image" src="images/3.png">
+        <div id="menu">푸라닭 투움바 치킨</div>
+    </section>
+    <section id="bottom">
+        <div id="stars">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/star.png">
+            <img src="images/blankstar.png">
+        </div>
+        <div id="textBox">
+            <div>솔직한 리뷰를 작성해주세요!</div>
+        </div>
+        <div id="review_img">
+            <div id="photobox">
+                <img id="camera" src="images/Vector%20(1).png">
+                <div>사진 추가</div>
+            </div>
+            <div id="images">
+                <div id="one">
+                    <img class="photo" src="images/1.png">
+                    <img id="x1" src="images/x.png">
+                </div>
+                <div id="two">
+                    <img class="photo" src="images/2.png">
+                    <img id="x2" src="images/x.png">
+                </div>
+            </div>
+        </div>
+        <div id="button">
+            <div id="buttonText">리뷰작성</div>
+        </div>
+    </section>
+</html>
